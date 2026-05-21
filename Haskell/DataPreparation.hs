@@ -48,7 +48,7 @@ splitByComma s =
 -- 3. Запуск конвейера
 main :: IO ()
 main = do
-    csvData <- readFile "../../Python/CSV/dirty_dataset.csv"   
+    csvData <- readFile "../Python/dirty_dataset.csv"
     let (header:rows) = lines csvData -- Пропускаем строку с заголовками
     let results = map parseRow rows
 

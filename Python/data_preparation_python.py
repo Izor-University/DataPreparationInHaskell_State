@@ -23,4 +23,4 @@ def process_data(file_path):
     
     print(f"Очистка завершена. Потеряно строк: {initial_rows - final_rows}")
     return df
-cleaned_df = process_data('../CSV/dirty_dataset.csv')
+cleaned_df = process_data('dirty_dataset.csv')

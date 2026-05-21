@@ -29,7 +29,7 @@ df.loc[null_age_indices, 'age'] = np.nan
 df['income'] = df['income'].astype(object) 
 # -------------------------------------------
 
-# 2. Ловушка с типами в доходе (теперь сработает)
+# 2. Ловушка с типами в доходе
 string_income_indices = random.sample(range(NUM_ROWS), 30)
 for idx in string_income_indices:
     df.loc[idx, 'income'] = f"{df.loc[idx, 'income']}$"
